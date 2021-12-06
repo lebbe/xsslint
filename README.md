@@ -44,6 +44,32 @@ This will print out a bunch of warnings like:
 foo.js:123: possibly XSS-able `html()` call
 ```
 
+## from command line
+
+You can install xsslint globally (or use npx), and run it
+directly from the command line. The exit status code is the
+number of possible XSS-errors found.
+
+Pass files as arguments:
+
+```
+npm install xsslint -g
+xsslint **/*.js
+```
+
+or
+
+```
+npx xsslint **/*.js
+```
+
+This will print out warnings in the form of
+
+```
+foo.js:123: possibly XSS-able `html()` call.
+```
+
+
 ## and then?
 
 Given a list of warnings, you'll want to evaluate each one, and then:
