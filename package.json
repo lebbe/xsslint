@@ -3,6 +3,7 @@
   "version": "0.1.6",
   "description": "Find potential XSS vulnerabilities",
   "main": "main.js",
+  "bin": "bin/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jenseng/xsslint"
